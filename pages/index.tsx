@@ -75,7 +75,7 @@ export default function Home() {
           {data.map((api) => {
             return (
               <div key={api.id}>
-                <div className="flex flex-row justify-between items-center bg-slate-300 rounded-md gap-3">
+                <div className="flex flex-row justify-between items-center rounded-md gap-3">
                   <div className="flex flex-row items-center gap-3">
                     <span className="method-label">{api.method}</span>
                     <code>{api.url}</code>
