@@ -29,8 +29,8 @@ const data = [
   },
   {
     id: "4",
-    method: "GET",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/users`,
+    method: "PUT",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/users/:id`,
     body: { image: "https://placehold.co/600x400" },
   },
 ];
@@ -70,7 +70,7 @@ export default function Home() {
       </div>
 
       <div className="w-full max-w-5xl items-start justify-between font-mono text-sm lg:flex flex-col">
-        <h1 className="text-2xl">Routes:</h1>
+        <h1 className="text-2xl">APIs:</h1>
         <div className="[&>*]:mt-8">
           {data.map((api) => {
             return (
