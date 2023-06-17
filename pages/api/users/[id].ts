@@ -2,7 +2,7 @@ import { QueryResult, QueryResultRow, createClient } from "@vercel/postgres";
 import { nanoid } from "nanoid";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const connectionString = process.env.POSTGRES_URL_NON_POOLING;
+const connectionString = process.env.NEXT_PUBLIC_POSTGRES_URL_NON_POOLING;
 
 export default async function handler(
   req: NextApiRequest,
